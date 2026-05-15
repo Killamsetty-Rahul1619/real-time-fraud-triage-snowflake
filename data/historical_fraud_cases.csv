@@ -1,0 +1,11 @@
+case_id,customer_id,fraud_type,first_fraud_txn_ts,detected_at_ts,total_loss_usd,num_fraudulent_txns,resolution,root_cause_summary
+FC2025-0411,CUST101,CARD_TESTING,2025-08-14 04:22:11,2025-08-14 04:31:08,3450.00,7,CHARGEBACK_WON,Card credentials stolen via phishing; tested with sub-$5 charges at digital goods merchant before $2900 hit
+FC2025-0529,CUST142,GEOGRAPHIC_ANOMALY,2025-09-22 02:11:30,2025-09-22 02:45:18,8200.00,2,CHARGEBACK_WON,Customer card cloned during overseas travel; counterfeit used in different country one week later
+FC2025-0712,CUST208,ACCOUNT_TAKEOVER,2025-10-08 03:48:55,2025-10-08 07:22:00,5670.00,4,CHARGEBACK_WON,Mobile app credentials phished; attacker added new device and made high-value jewelry purchases overnight
+FC2025-0918,CUST311,MERCHANT_COLLUSION,2025-11-15 16:30:00,2025-11-17 09:00:00,12400.00,12,CHARGEBACK_PARTIAL,Compromised merchant POS terminal at hotel; multiple cards skimmed over 48 hours
+FC2025-1102,CUST404,SYNTHETIC_IDENTITY,2025-12-01 12:00:00,2025-12-22 14:00:00,15800.00,18,WRITTEN_OFF,Account opened with fabricated identity; small purchases for 3 weeks then bust-out via cash equivalents
+FC2026-0114,CUST522,FIRST_PARTY_FRAUD,2026-01-08 22:14:11,2026-01-12 10:00:00,4200.00,3,DISPUTED,Customer claimed unauthorized but evidence suggested they made the purchases themselves
+FC2026-0208,CUST611,CARD_TESTING,2026-02-03 23:18:22,2026-02-04 00:05:00,2890.00,6,CHARGEBACK_WON,Same pattern as FC2025-0411 - small digital goods then big-ticket within 10 minutes
+FC2026-0303,CUST728,GEOGRAPHIC_ANOMALY,2026-02-28 01:30:00,2026-02-28 02:15:00,4850.00,1,CHARGEBACK_WON,Single high-value jewelry purchase in Southeast Asia while customer was in US (verified via geolocation)
+FC2026-0421,CUST812,ACCOUNT_TAKEOVER,2026-04-15 04:11:08,2026-04-15 08:45:00,3200.00,3,CHARGEBACK_WON,Luxury watch purchase from new device after customer received SIM swap notification (ignored)
+FC2026-0505,CUST905,CRYPTO_RAMP_FRAUD,2026-04-30 19:22:00,2026-05-01 08:00:00,6500.00,5,DISPUTED,Customer transferred funds to crypto exchange after romance-scam social engineering

@@ -1,0 +1,11 @@
+customer_id,full_name,email,phone,date_of_birth,home_city,home_country,account_open_date,avg_monthly_spend_usd,customer_tier,kyc_status,risk_tier
+CUST001,Sarah Chen,sarah.chen@example.com,+14155551001,1985-03-12,San Francisco,US,2018-06-15,4200.00,GOLD,VERIFIED,LOW
+CUST002,James Williams,j.williams@example.com,+14085552002,1979-11-04,San Jose,US,2015-02-20,6800.00,PLATINUM,VERIFIED,LOW
+CUST003,Maria Garcia,maria.g@example.com,+15035553003,2001-07-22,Portland,US,2023-09-01,650.00,STANDARD,VERIFIED,MEDIUM
+CUST004,Robert Patel,r.patel@example.com,+12125554004,1958-01-15,New York,US,2010-04-10,2100.00,GOLD,VERIFIED,LOW
+CUST005,Aisha Kumar,aisha.k@example.com,+16175555005,1993-05-30,Boston,US,2021-08-12,3500.00,GOLD,VERIFIED,LOW
+CUST006,David Park,david.park@example.com,+12065556006,1990-09-18,Seattle,US,2020-03-25,5200.00,GOLD,VERIFIED,LOW
+CUST007,Emma Thompson,emma.t@example.com,+13105557007,1982-12-08,Los Angeles,US,2016-11-30,7400.00,PLATINUM,VERIFIED,LOW
+CUST008,Carlos Rodriguez,c.rodriguez@example.com,+13055558008,1975-06-25,Miami,US,2014-07-18,9100.00,PLATINUM,VERIFIED,LOW
+CUST009,Yuki Tanaka,yuki.t@example.com,+18185559009,1988-04-11,Los Angeles,US,2019-10-05,4800.00,GOLD,VERIFIED,LOW
+CUST010,Nathan Brooks,n.brooks@example.com,+19175550010,1996-08-19,Brooklyn,US,2026-04-20,820.00,STANDARD,VERIFIED,HIGH

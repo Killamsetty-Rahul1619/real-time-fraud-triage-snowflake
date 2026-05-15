@@ -1,0 +1,19 @@
+merchant_id,merchant_name,merchant_category,mcc_code,city,country,registered_date,chargeback_rate_pct,merchant_risk_rating,is_high_risk_category
+MERCH001,Whole Foods Market,Grocery,5411,San Francisco,US,2005-04-12,0.08,LOW,FALSE
+MERCH002,Shell Gas Station,Fuel,5541,Various,US,2001-01-01,0.12,LOW,FALSE
+MERCH003,Amazon.com,Ecommerce General,5942,Seattle,US,1998-05-15,0.18,LOW,FALSE
+MERCH004,Netflix Subscription,Streaming,4899,Los Gatos,US,2007-03-10,0.04,LOW,FALSE
+MERCH005,Starbucks,Coffee Shop,5814,Various,US,2003-06-20,0.05,LOW,FALSE
+MERCH006,United Airlines,Airline,3000,Chicago,US,2002-08-08,0.25,LOW,FALSE
+MERCH007,QuickCash Forex Services,Money Transfer,4829,London,GB,2024-11-02,4.20,HIGH,TRUE
+MERCH008,CryptoGate Exchange,Cryptocurrency,6051,Tallinn,EE,2025-08-14,3.85,HIGH,TRUE
+MERCH009,GoldDeals Jewelry KL,Jewelry,5944,Kuala Lumpur,MY,2025-12-03,5.10,HIGH,TRUE
+MERCH010,Marriott Hotels Worldwide,Lodging,3501,Bethesda,US,2000-02-01,0.15,LOW,FALSE
+MERCH011,DigitalGoods Plus,Digital Downloads,5815,Limassol,CY,2026-01-18,7.80,HIGH,TRUE
+MERCH012,Apple.com,Electronics Retail,5732,Cupertino,US,2000-11-07,0.10,LOW,FALSE
+MERCH013,LuxuryWatches Geneva,Jewelry,5944,Geneva,CH,2019-04-22,1.25,MEDIUM,TRUE
+MERCH014,Tesco Supermarket,Grocery,5411,Welwyn,GB,2001-03-15,0.09,LOW,FALSE
+MERCH015,LocalCafe Tokyo,Coffee Shop,5814,Tokyo,JP,2017-09-30,0.06,LOW,FALSE
+MERCH016,GameTopUp Direct,Gaming Vouchers,5816,Manila,PH,2025-09-11,6.40,HIGH,TRUE
+MERCH017,Walgreens,Pharmacy,5912,Various,US,2002-05-20,0.07,LOW,FALSE
+MERCH018,Uber Technologies,Rideshare,4121,San Francisco,US,2010-03-15,0.22,LOW,FALSE
