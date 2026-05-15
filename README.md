@@ -22,38 +22,25 @@ The project demonstrates **streaming ingestion**, **incremental processing**, an
 
 ## 🏗️ High-Level Architecture
 
-Local Machine
-|
-| (upload CSV)
-v
-AWS S3
-|
-| Snowpipe (AUTO_INGEST)
-v
-Snowflake Tables
-|
-v
-Enriched Transactions
-|
-v
-Feature Engineering
-|
-v
-Triage Queue + Stream
-|
-v
-Fraud Agent Procedure
-|
-+--> card_action_queue
-+--> slack_outbox
-+--> agent_decisions (audit)
+
+Local Machine (CSV upload)  
+→ AWS S3  
+→ Snowpipe (AUTO_INGEST)  
+→ Snowflake Raw Tables  
+→ Enriched Transactions  
+→ Feature Engineering  
+→ Triage Queue + Stream  
+→ Fraud Agent Procedure  
+  ├── card_action_queue  
+  ├── slack_outbox  
+  └── agent_decisions (
+
 
 ---
 
 ## 📁 Repository Structure
 
 real-time-fraud-triage-snowflake/
-│
 ├── data/
 │   ├── customers.csv
 │   ├── merchants.csv
@@ -77,7 +64,6 @@ real-time-fraud-triage-snowflake/
 │
 ├── ASSIGNMENT.md
 └── README.md
-
 ---
 
 ## ✅ Prerequisites
