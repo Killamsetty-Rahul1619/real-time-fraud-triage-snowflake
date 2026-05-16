@@ -130,12 +130,14 @@ STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::<account-id>:role/<role-name>'
 
 ---
 
-❄️ Snowflake Setup
+## ❄️ Snowflake Setup
 
-Step 1: Run Initial Setup
+### Step 1: Run Initial Setup
+
 Execute:
+```sql
 sql-files/setup.sql
-
+```
 This creates:
 
 Database & schema
