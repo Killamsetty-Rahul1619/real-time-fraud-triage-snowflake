@@ -213,7 +213,6 @@ Output.csv grows over time and includes both historical and newly ingested trans
 | P-003     | Account takeover                    |
 | P-004     | Crypto scam                         |
 | P-005     | Frequent traveler suppression       |
-``
 
 Each pattern is documented in its corresponding markdown file.
 
