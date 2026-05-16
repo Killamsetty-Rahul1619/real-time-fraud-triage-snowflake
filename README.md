@@ -40,30 +40,31 @@ Local Machine (CSV upload)
 
 ## 📁 Repository Structure
 
-real-time-fraud-triage-snowflake/
-├── data/
-│   ├── customers.csv
-│   ├── merchants.csv
-│   ├── transactions.csv
-│   ├── new_transactions.csv
-│   ├── historical_fraud_cases.csv
-│   └── Output.csv
-│
-├── sql-files/
-│   ├── setup.sql
-│   ├── enriched_transactions.sql
-│   ├── txn_features_and_fraud_signals.sql
-│   ├── triage_queue_and_stream.sql
-│   └── run_fraud_agent.sql
-│
-├── P001_card_testing_bustout.md
-├── P002_geographic_anomaly.md
-├── P003_account_takeover.md
-├── P004_crypto_scam.md
-├── P005_frequent_traveler_suppression.md
-│
-├── ASSIGNMENT.md
-└── README.md
+real-time-fraud-triage-snowflake  
+→ data  
+ → customers.csv  
+ → merchants.csv  
+ → transactions.csv  
+ → new_transactions.csv  
+ → historical_fraud_cases.csv  
+ → Output.csv  
+
+→ sql-files  
+ → setup.sql  
+ → enriched_transactions.sql  
+ → txn_features_and_fraud_signals.sql  
+ → triage_queue_and_stream.sql  
+ → run_fraud_agent.sql  
+
+→ Capstone Project
+ → ASSIGNMENT.md
+ → P001_card_testing_bustout.md  
+ → P002_geographic_anomaly.md  
+ → P003_account_takeover.md  
+ → P004_crypto_scam.md  
+ → P005_frequent_traveler_suppression.md  
+ 
+→ README.md
 
 ---
 
