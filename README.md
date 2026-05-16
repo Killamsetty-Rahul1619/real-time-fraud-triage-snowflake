@@ -128,7 +128,10 @@ Copy the **Role ARN** and use it in `setup.sql`:
 STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::<account-id>:role/<role-name>'
 ```
 
+---
+
 ❄️ Snowflake Setup
+
 Step 1: Run Initial Setup
 Execute:
 sql-files/setup.sql
