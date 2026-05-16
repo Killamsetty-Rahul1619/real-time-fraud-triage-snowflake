@@ -140,30 +140,34 @@ sql-files/setup.sql
 ```
 This creates:
 
-Database & schema
-Warehouse
-Core tables
-Storage integration
-External stage
-Snowpipes
+- Database & schema
+- Warehouse
+- Core tables
+- Storage integration
+- External stage
+- Snowpipes
 
 
-Step 2: Create Enrichment Layer
+### Step 2: Create Enrichment Layer
+```sql
 sql-files/enriched_transactions.sql
-
+```
 Step 3: Feature Engineering & Fraud Signals
+```sql
 sql-files/txn_features_and_fraud_signals.sql
-
+```
 Step 4: Triage Queue and Stream
+```sql
 sql-files/triage_queue_and_stream.sql
-
+```
 This:
 Filters high-risk transactions (risk_score >= 70)
 Creates a stream to capture new review records
 
 Step 5: Run Fraud Agent
+```sql
 sql-files/run_fraud_agent.sql
-
+```
 This:
 Consumes stream records
 Applies fraud pattern logic
@@ -171,7 +175,7 @@ Writes decisions to audit table
 Queues block/escalation actions
 
 
-🔄 Simulating Real-Time Ingestion
+## 🔄 Simulating Real-Time Ingestion
 
 1. Upload new_transactions.csv to the S3 transactions/ folder
 2. Snowpipe automatically ingests the data
@@ -183,7 +187,7 @@ Queues block/escalation actions
 4. Fraud agent processes only new transactions
 
 
-📊 Output & Audit
+## 📊 Output & Audit
 
 agent_decisions → full audit trail
 card_action_queue → auto-block actions
@@ -193,32 +197,7 @@ Output.csv → exported snapshot of decisions
 Output.csv grows over time and includes both historical and newly ingested transactions.
 
 
-🧠 Fraud Patterns Implemented
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 🧠 Fraud Patterns Implemented
 
 
 
