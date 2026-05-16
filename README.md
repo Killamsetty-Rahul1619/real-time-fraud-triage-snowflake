@@ -101,19 +101,19 @@ s3://sprintproject1619/
 
 Inside the bucket, keep logical folders per entity:
 
-s3://sprintproject1619/
-├── customers/
-│   └── customers.csv
-│
-├── merchants/
-│   └── merchants.csv
-│
-├── transactions/
-│   ├── transactions.csv
-│   └── new_transactions.csv
-│
-├── historical_fraud_cases/
-│   └── historical_fraud_cases.csv
+s3://sprintproject1619/  
+→ customers/  
+ → customers.csv  
+
+→ merchants/  
+ → merchants.csv  
+
+→ transactions/  
+ → transactions.csv  
+ → new_transactions.csv  
+
+→ historical_fraud_cases/  
+ → historical_fraud_cases.csv
 
 ---
 
@@ -152,11 +152,11 @@ This creates:
 ```sql
 sql-files/enriched_transactions.sql
 ```
-Step 3: Feature Engineering & Fraud Signals
+### Step 3: Feature Engineering & Fraud Signals
 ```sql
 sql-files/txn_features_and_fraud_signals.sql
 ```
-Step 4: Triage Queue and Stream
+### Step 4: Triage Queue and Stream
 ```sql
 sql-files/triage_queue_and_stream.sql
 ```
@@ -164,7 +164,7 @@ This:
 Filters high-risk transactions (risk_score >= 70)
 Creates a stream to capture new review records
 
-Step 5: Run Fraud Agent
+### Step 5: Run Fraud Agent
 ```sql
 sql-files/run_fraud_agent.sql
 ```
