@@ -152,27 +152,34 @@ This creates:
 ```sql
 sql-files/enriched_transactions.sql
 ```
+
+
 ### Step 3: Feature Engineering & Fraud Signals
 ```sql
 sql-files/txn_features_and_fraud_signals.sql
 ```
+
+
 ### Step 4: Triage Queue and Stream
 ```sql
 sql-files/triage_queue_and_stream.sql
 ```
 This:
-Filters high-risk transactions (risk_score >= 70)
-Creates a stream to capture new review records
+
+- Filters high-risk transactions (risk_score >= 70)
+- Creates a stream to capture new review records
+
 
 ### Step 5: Run Fraud Agent
 ```sql
 sql-files/run_fraud_agent.sql
 ```
 This:
-Consumes stream records
-Applies fraud pattern logic
-Writes decisions to audit table
-Queues block/escalation actions
+
+- Consumes stream records
+- Applies fraud pattern logic
+- Writes decisions to audit table
+- Queues block/escalation actions
 
 
 ## 🔄 Simulating Real-Time Ingestion
@@ -189,10 +196,10 @@ Queues block/escalation actions
 
 ## 📊 Output & Audit
 
-agent_decisions → full audit trail
-card_action_queue → auto-block actions
-slack_outbox → escalation messages
-Output.csv → exported snapshot of decisions
+- agent_decisions → full audit trail
+- card_action_queue → auto-block actions
+- slack_outbox → escalation messages
+- Output.csv → exported snapshot of decisions
 
 Output.csv grows over time and includes both historical and newly ingested transactions.
 
@@ -202,18 +209,29 @@ Output.csv grows over time and includes both historical and newly ingested trans
 
 
 
-Pattern IDDescriptionP-001Card testing / burst transactionsP-002Geographic anomalyP-003Account takeoverP-004Crypto scamP-005Frequent traveler suppression
+Pattern ID | Description
+---
+P-001 | Card testing / burst transactions
+---
+P-002 | Geographic anomaly
+---
+P-003 | Account takeover
+---
+P-004 | Crypto scam
+---
+P-005 | Frequent traveler suppression
+
 Each pattern is documented in its corresponding markdown file.
 
 ✅ Decision Types
 
-AUTO_BLOCK – High confidence fraud
-ESCALATE – Requires analyst review
-DISMISS – Legitimate activity
+- AUTO_BLOCK – High confidence fraud
+- ESCALATE – Requires analyst review
+- DISMISS – Legitimate activity
 
 Each decision includes:
 
-Confidence score
-Pattern matched
-Justification
-Timestamp
+- Confidence score
+- Pattern matched
+- Justification
+- Timestamp
