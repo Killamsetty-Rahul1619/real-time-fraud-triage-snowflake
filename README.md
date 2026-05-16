@@ -56,9 +56,9 @@ real-time-fraud-triage-snowflake
  → triage_queue_and_stream.sql  
  → run_fraud_agent.sql  
 
-→ Capstone Project
- → ASSIGNMENT.md
- → P001_card_testing_bustout.md  
+→ Capstone Project  
+ → ASSIGNMENT.md  
+ → P001_card_testing_bustout.md  
  → P002_geographic_anomaly.md  
  → P003_account_takeover.md  
  → P004_crypto_scam.md  
