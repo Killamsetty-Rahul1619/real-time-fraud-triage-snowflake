@@ -126,14 +126,12 @@ Create an IAM Role with:
 Copy the **Role ARN** and use it in `setup.sql`:
 ```sql
 STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::<account-id>:role/<role-name>'
-
+```
 
 ❄️ Snowflake Setup
 Step 1: Run Initial Setup
 Execute:
-SQLsql-files/setup.sql``Show more lines
-
-
+sql-files/setup.sql
 
 This creates:
 
@@ -146,23 +144,22 @@ Snowpipes
 
 
 Step 2: Create Enrichment Layer
-SQLsql-files/enriched_transactions.sqlShow more lines
+sql-files/enriched_transactions.sql
 
 Step 3: Feature Engineering & Fraud Signals
-SQLsql-files/txn_features_and_fraud_signals.sqlShow more lines
+sql-files/txn_features_and_fraud_signals.sql
 
 Step 4: Triage Queue and Stream
-SQLsql-files/triage_queue_and_stream.sqlShow more lines
-This:
+sql-files/triage_queue_and_stream.sql
 
+This:
 Filters high-risk transactions (risk_score >= 70)
 Creates a stream to capture new review records
 
-
 Step 5: Run Fraud Agent
-SQLsql-files/run_fraud_agent.sqlShow more lines
-This:
+sql-files/run_fraud_agent.sql
 
+This:
 Consumes stream records
 Applies fraud pattern logic
 Writes decisions to audit table
@@ -171,17 +168,14 @@ Queues block/escalation actions
 
 🔄 Simulating Real-Time Ingestion
 
-Upload new_transactions.csv to the S3 transactions/ folder
-Snowpipe automatically ingests the data
-New records flow through:
-
-Enrichment
-Feature computation
-Triage queue
-Stream
-
-
-Fraud agent processes only new transactions
+1. Upload new_transactions.csv to the S3 transactions/ folder
+2. Snowpipe automatically ingests the data
+3. New records flow through:
+ > Enrichment
+ > Feature computation
+ > Triage queue
+ > Stream
+4. Fraud agent processes only new transactions
 
 
 📊 Output & Audit
@@ -190,7 +184,6 @@ agent_decisions → full audit trail
 card_action_queue → auto-block actions
 slack_outbox → escalation messages
 Output.csv → exported snapshot of decisions
-
 
 Output.csv grows over time and includes both historical and newly ingested transactions.
 
