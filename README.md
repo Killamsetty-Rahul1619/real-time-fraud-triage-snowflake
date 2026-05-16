@@ -187,10 +187,11 @@ This:
 1. Upload new_transactions.csv to the S3 transactions/ folder
 2. Snowpipe automatically ingests the data
 3. New records flow through:
- > Enrichment
- > Feature computation
- > Triage queue
- > Stream
+
+- Enrichment
+- Feature computation
+- Triage queue
+- Stream
 4. Fraud agent processes only new transactions
 
 
